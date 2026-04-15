@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <title>LOL - 1단계</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main2.css">
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/test.js"></script>
   
@@ -13,23 +14,7 @@
   </script>
 </head>
 
-<style>
-  .card {
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .card:hover {
-    transform: scale(1.05); /* 마우스를 올리면 커짐 */
-    box-shadow: 0 10px 20px rgba(160, 32, 240, 0.5); /* 보라색 광원 효과 */
-  }
-  .card-img-top {
-    height: 200px;
-    object-fit: cover; /* 이미지가 찌그러지지 않게 채움 */
-  }
-  body { background-color: #0a0e17; color: #fff; }
-  .accent-purple { color: #a020f0; }
-  .card { background-color: #1e1e1e; border: none; color: white; }
-  .btn-primary { background-color: #a020f0; border: none; }
-</style>
+
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
@@ -328,6 +313,24 @@
     </div>
   </div>
 </div>
+
+
+    <!--===== 검색결과섹션(기본숨김) ===== -->
+    <section id="searchResults">
+      <!--키워드헤더-->
+      <div class="search-keyword-header">
+        <h1 id="searchKeywordDisplay"></h1>
+      </div>
+      <!--본문: 사이드바+ 콘텐츠-->
+      <div class="search-body">
+        <div class="container-fluid px-0">
+          <div class="row g-0">
+          <!--왼쪽카테고리사이드바-->
+      <div class="col-md-3 col-lg-2 search-sidebar bg-white py-4">
+      <div class="px-3 mb-3" style="font-size:0.8rem; color:#999; text-transform:uppercase; letter-spacing:0.1em;">카테고리</div>
+      <div class="search-category-item active" onclick="switchCategory('champion', this)">
+      챔피언<span class="count" id="champCount">(0)</span>
+    </div>
 
     <script src="js/search.js"></script>
 </body>
