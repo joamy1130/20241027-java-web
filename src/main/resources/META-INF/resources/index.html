@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="css/main2.css">
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/test.js"></script>
+  <script src="js/test2.js"></script>
+  <script src="js/toggle.js"></script>
   
   <script>
   window.onload = function() {
@@ -18,8 +20,12 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
+    <img src="/images/LOL.webp" alt="" width="30" height="24">
+    <!-- [변경] "Navbar" 텍스트 → 다크/라이트 토글 버튼 -->
+    <button class="btn border-0" id="themeToggleBtn" onclick="toggleTheme()">🌙DARK
+</button>
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">리그오브레전드</a>
+      <!--<a class="navbar-brand" href="#">리그오브레전드</a>-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
